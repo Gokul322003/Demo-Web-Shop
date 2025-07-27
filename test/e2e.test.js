@@ -90,8 +90,8 @@ test('E2E', async ({ page }) => {
     const successfullOrderPage = new SuccessfullOrder(page);
     await successfullOrderPage.VerifySuccessMessage();
     await successfullOrderPage.VerifyOrderId();
-    //completed
-    
+    //completed     
+
 
 
 
