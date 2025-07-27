@@ -87,9 +87,9 @@ test('E2E', async ({ page }) => {
     expect (parseFloat(ConfirmOrderPage.FinalAmount)).toBe(TotalPrice);
     await ConfirmOrderPage.ConfirmOrderContinue();
 
-    const SuccessfullOrderPage = new SuccessfullOrder(page);
-    await SuccessfullOrderPage.VerifySuccessMessage();
-    await SuccessfullOrderPage.VerifyOrderId();
+    const successfullOrderPage = new SuccessfullOrder(page);
+    await successfullOrderPage.VerifySuccessMessage();
+    await successfullOrderPage.VerifyOrderId();
 
 
 

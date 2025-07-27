@@ -67,6 +67,7 @@ async getCODAmount(){
     const paymentLabel = await this.CODAmount.innerText();
     this.amount = paymentLabel.match(/\((\d+)\.\d+\)/)[1];
     console.log(this.amount);
+    return this.amount;
     
     
 }
