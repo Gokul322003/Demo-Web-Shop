@@ -29,7 +29,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: 🚀 Run Playwright Tests
-        run: npx playwright test test/e2e.test.js 
+        run: npx playwright test 
 
       - name: 📤 Upload Test Report
         if: always()
